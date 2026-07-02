@@ -76,7 +76,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'notesportal.wsgi.application'
 
 ALLOWED_HOSTS = [
-    "127.0.0.1",
+     "notexa-sxaj.onrender.com",
     "localhost",
     ".ngrok-free.dev",
 ]
