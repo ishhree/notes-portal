@@ -1,0 +1,84 @@
+
+<style>
+body{
+    background:#eef2ff;
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    margin-top:40px;
+}
+
+h2{
+    color:#4338ca;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.card{
+    border:none;
+    border-radius:20px;
+    background:white;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card h4{
+    color:#64748b;
+    font-size:18px;
+}
+
+.card h2{
+    color:#4338ca;
+    font-size:42px;
+    margin-top:10px;
+}
+</style>
+<div class="container mt-5">
+
+    <div class="text-center mb-5">
+        <h1 class="fw-bold text-primary"> Admin Dashboard</h1>
+        <p class="text-muted">Manage Notes Portal Efficiently</p>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-6 mb-4">
+            <div class="card border-0 shadow-lg text-center p-4">
+                <div class="card-body">
+                    <h5 class="text-secondary"> Total Notes</h5>
+                    <h1 class="display-4 fw-bold text-primary">
+                        {{ total_notes }}
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card border-0 shadow-lg text-center p-4">
+                <div class="card-body">
+                    <h5 class="text-secondary">👥 Total Users</h5>
+                    <h1 class="display-4 fw-bold text-success">
+                        {{ total_users }}
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="/" class="btn btn-primary px-4">
+             Home
+        </a>
+
+        <a href="/upload" class="btn btn-success px-4">
+             Upload Note
+        </a>
+    </div>
+
+</div>
