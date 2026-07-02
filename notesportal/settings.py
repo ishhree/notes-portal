@@ -82,7 +82,7 @@ ALLOWED_HOSTS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://headpiece-storage-carpenter.ngrok-free.dev",
+      "https://notexa-sxaj.onrender.com",
 ]
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
